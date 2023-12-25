@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.controller.LoginScreenController">
+    <center>
+        <VBox alignment="CENTER" spacing="7.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="quitButton" mnemonicParsing="false" onAction="#quit" text="Quit" />
+                    </children>
+                    <VBox.margin>
+                        <Insets right="20.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <Label text="Welcome to the Course Review Application" />
+                <Label text="Please Log-in Below" />
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <VBox prefHeight="51.0" prefWidth="79.0" spacing="10.0">
+                            <children>
+                                <Label text="Username" />
+                                <Label text="Password" />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="0.0" prefWidth="100.0">
+                            <children>
+                                <TextField fx:id="username" />
+                                <TextField fx:id="password" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Label fx:id="errorLabel" BorderPane.alignment="CENTER" />
+                <HBox alignment="TOP_CENTER" prefHeight="20.0" prefWidth="600.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" text="Log-in" />
+                    </children>
+                </HBox>
+                <Label text="Don't Have an Account?" />
+                <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#createAccountScreen" text="Create Account" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
